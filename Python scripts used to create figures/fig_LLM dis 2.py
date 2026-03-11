@@ -55,12 +55,12 @@ fig, ax = plt.subplots(figsize=(w_in, h_in))
 bars = ax.barh(labels, values, height=0.6, color = "#1f77b4")
 
 ax.invert_yaxis()
-ax.set_xlabel("Number of papers (multi-label)")
+ax.set_xlabel("Number of papers")
 ax.grid(axis="x", linestyle="--", linewidth=0.5, alpha=0.5)
 
 # Put numbers INSIDE bars (cleaner than outside in narrow width)
 ax.bar_label(bars, padding=1, fontsize=7)
-
+ax.set_xlim(0, max(values) + 5)
 # Tight margins for y labels
 fig.subplots_adjust(left=0.50, right=0.98, top=0.98, bottom=0.18)
 
