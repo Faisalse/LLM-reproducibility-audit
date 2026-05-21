@@ -1,0 +1,16 @@
+\headerbox{Results (2/3): General reproducibility variables}{name=b5}{
+\begin{center}
+    \textbf{\large Datasets, preprocessing, Hyperparameters, and Evaluation Protocol}\\[-0.3em]
+\end{center}
+
+  
+  \begin{itemize}
+      \item Because datasets may have multiple versions, exact links are needed. About half of the papers provide them; 25 provide none, and 6 share only partial links.
+      \item Only 11 papers (17\%) share complete train-test splits, while 46 (71\%) provide none; 7 share partial splits.
+      \item Dataset statistics are inconsistently reported: 16 papers (25\%) provide post-processing statistics, 2 report both stages, 2 report partial statistics, 14 (21\%) provide none, and 30 do not specify the stage.
+      \item Given LLM stochasticity and API deprecation risks, shared outputs would support metric recomputation, but no paper provides such files.
+      \item Hyperparameter documentation is limited: only 21/59 papers (36\%) report full search ranges; 13 use fixed values, 1 reports partial ranges, and 24 report none.
+      \item Tuning strategies are also poorly documented: 36/46 papers do not specify how optimal hyperparameters were selected.
+      \item Evaluation details are often incomplete: about \textbf{25\% of papers} do not report the evaluation protocol.
+  \end{itemize}
+}
